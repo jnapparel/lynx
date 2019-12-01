@@ -155,11 +155,21 @@
   z-index: 1;
 }
 
+.active{
+    border-left: 3px solid #3dbd99;
+    background: #f6f6f6;
+}
+
 .insta{
   padding-left: 10px;
   padding-bottom: 7px;
   position: relative;
   float: center;
+}
+
+.current{
+  float: right;
+  padding-right: 10px;
 }
 
 .logo{
