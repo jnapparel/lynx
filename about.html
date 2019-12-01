@@ -22,27 +22,28 @@
    <li><a href='index.html'><span>&#36; Store</span></a></li>
    <li><a href='about.html'><span>&#10002; About Us</span></a></li>
    <li class='last'><a href='contact.html'><span>&#9993; Contact Us</span></a></li>
+   <hr>
+   <a class="insta" href="https://www.instagram.com/lynx_.co/" target="_blank"><img src="gram.png" id = "insta" height = "20px" width = "20px" top="10px"></img></a>
 </ul>
 </div>
 
-<span style="font-size:30px;cursor:pointer" id="menubutt" onclick="openNav()">&#9776; Menu</span>
+<span style="font-size:30px;cursor:pointer" id="menubutt" onclick="openNav()">&#9776;</span>
 
 <div id="main">
-    <h1>About the Lynx Staff:</h1>
-    <p>You guys gotta type up some stuff for me to put here</p>
+  <h1>About:</h1>
 </div>
-
+<div id="overlay"></div>
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "200px";
   document.getElementById("main").style.marginLeft = "200px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  document.getElementById("overlay").style.opacity = ".3";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
-  document.body.style.backgroundColor = "white";
+  document.getElementById("overlay").style.opacity = "0";
 }
 </script>
 </body>
