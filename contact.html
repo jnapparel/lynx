@@ -4,7 +4,7 @@
    <meta charset='utf-8'>
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link href="StyleSheet.css" rel="stylesheet">
+   <link href="contact.css" rel="stylesheet">
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <script src="script.js"></script>
    <title>Lynx</title>
@@ -23,14 +23,76 @@
    <li><a href='about.html'><span>&#10002; About Us</span></a></li>
    <li class='last'><a class = "active" href='contact.html'><span>&#9993; Contact Us</span><span class="current">&#8592;</span></a></li>
    <hr>
-   <a class="insta" href="https://www.instagram.com/lynx_.co/" target="_blank"><img src="gram.png" id = "insta" height = "20px" width = "20px" top="10px"></img></a>
+   <a class="insta" href="https://www.instagram.com/lynx_.co/" target="_blank"><img src="img/gram.png" id = "insta" height = "20px" width = "20px" top="10px"></img></a>
 </ul>
 </div>
 
 <span style="font-size:30px;cursor:pointer" id="menubutt" onclick="openNav()">&#9776;</span>
 
 <div id="main">
-  <h1>Contact Us</h1>
+  <body>
+    <h2 class="content-head is-center">Contact Us!</h2>
+  <aside>
+       <p>
+           We would <em>love</em> to hear from you! </p>
+           <p>Please use the <b><em>Contact Form</em></b>
+           to send us a message.
+       </p>
+   </aside>
+
+<!-- START HERE -->
+   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="style.css">
+
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email=""
+  action="https://script.google.com/macros/s/AKfycbyJL2eUo1o4qUqALnPHWUD4X_vGQQvn6RoMzpbmFcz2YxUlfqZr/exec">
+    <!-- change the form action to your script url -->
+
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name">Name: </label>
+        <input id="name" name="name" placeholder="Jerry Smith" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" rows="10"
+        placeholder="What's on your mind?"></textarea>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email"><em>Your</em> Email Address:</label>
+        <input id="email" name="email" type="email" value=""
+        required placeholder="your.email@email.com"/>
+      </fieldset>
+
+      <fieldset class="pure-group honeypot-field">
+        <input id="honeypot" type="text" name="honeypot" value="" />
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks</em> for contacting us!
+        We will get back to you soon!</h2>
+    </div>
+
+  </form>
+  <br>
+  <hr>
+  <br>
+  <p>For buisness inquiries please email us directly at</p>
+  <p>lynx.co.customer.service@gmail.com</p>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="form-submission-handler.js"></script>
+<!-- END -->
+  </body>
 </div>
 <div id="overlay"></div>
 <script>
